@@ -13,4 +13,9 @@ export class TeamService {
   getTeamById(id: number) {
     return this.http.get<any>(`${teamsUrl}/${id}`);
   }
+
+  /** POST: add a new team to the database */
+  addTeam(id: number, name: string){
+    return this.http.post<any>(teamsUrl, {id, name});
+  }
 }

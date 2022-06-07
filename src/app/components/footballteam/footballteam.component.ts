@@ -19,16 +19,16 @@ export class FootballteamComponent implements OnInit {
   }
   onSubmit() {
     this.teamService.getTeamById(this.teamForm.get('id')?.value)
-  .subscribe({
-       next: (data) => {
-         this.response = data;
-         console.log(data);
-       },
-       error: (error) => {
-         this.response = error.error;
-       }
-    })
-}
+      .subscribe({
+        next: (data) => {
+          this.response = data;
+          console.log(data);
+        },
+        error: (error) => {
+          this.response = error.error;
+        }
+      })
+  }
   teamForm!: FormGroup;
   response!: string;
 
