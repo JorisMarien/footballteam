@@ -1,0 +1,17 @@
+.body
+{
+  margin: 40px;
+}
+
+:h1 {
+  font-style: italic;
+}
+
+.btn-primary{
+margin: 50px;
+background-color: blue;
+}
+
+.btn-primary:focus{
+  background-color: rgb(255, 0, 0);
+  }

@@ -9,7 +9,7 @@ const teamsUrl = 'http://localhost:3000/teams'
 export class TeamService {
 
   constructor(private http: HttpClient) { }
-
+/**GET: get a team by id from the database */
   getTeamById(id: number) {
     return this.http.get<any>(`${teamsUrl}/${id}`);
   }
