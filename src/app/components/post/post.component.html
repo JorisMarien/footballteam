@@ -1,7 +1,7 @@
 <div class="container">
   <form [formGroup]="teamForm" (ngSubmit)="onSubmit()" class="form-group">
     <div class="form-group content">
-      <label class="login-form-label">Team Id </label>
+      <label class="login-form-label">team Id </label>
       <input
         class="form-control"
         type="number"
@@ -9,6 +9,16 @@
         id="id"
         formControlName="id"
         data-cy="id"
+      />
+
+      <label class="login-form-label">Team name </label>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Enter a team name"
+        id="name"
+        formControlName="name"
+        data-cy="name"
       />
     </div>
 
